@@ -6,7 +6,14 @@
 /*   By: dabi-rac <dabi-rac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/09 12:10:34 by dabi-rac          #+#    #+#             */
-/*   Updated: 2023/02/09 12:12:07 by dabi-rac         ###   ########.fr       */
+/*   Updated: 2023/02/17 14:45:37 by dabi-rac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "ft_printf.h"
+
+void	ft_putchar(char c, int *count)
+{
+	write (1, &c, 1);
+	(*count)++;
+}
